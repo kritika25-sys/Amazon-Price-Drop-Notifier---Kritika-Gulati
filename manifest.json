@@ -1,0 +1,28 @@
+{
+    "manifest_version":2,
+    "name":"Amazon Price Drop Notifier",
+    "version":"0.1",
+    "content_scripts":[
+        {
+            "matches":[
+                "<all_urls>"
+            ],
+            "js":["angular.min.js","angular-ui-router.min.js","popup.js","jquery.js","content.js"]
+        }
+    ],
+    "background":{
+        "scripts":["angular.min.js","angular-ui-router.min.js","popup.js","jquery.js","background.js"]
+  },
+  "description": "Amazon Price Drop Notifier",
+  "icons": {
+    "128": "icon128.png",
+    "48": "icon48.png",
+    "16": "icon16.png"
+  },
+  "browser_action": {
+    "default_icon": "icon16.png",
+    "default_popup": "popup.html"
+  },
+  "content_security_policy": "script-src 'self' https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'",
+  "permissions": ["tabs", "activeTab"]
+}

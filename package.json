@@ -1,0 +1,19 @@
+{
+  "name": "node-kb",
+  "version": "1.0.0",
+  "description": "Amazon scraper",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server"
+  },
+  "author": "Kritika Gulati",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jquery": "^3.6.0",
+    "mongoose": "^5.13.2",
+    "morgan": "^1.10.0"
+  }
+}
